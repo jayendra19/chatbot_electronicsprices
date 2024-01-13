@@ -1,0 +1,115 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": ["Hi", "Hey", "Hello", "Hii", "Hola","heya","heyyy"],
+      "responses": [
+        "Hello! How can I assist you today? You can choose between Mobiles and Laptops."
+      ],
+      "context_set": "category_selection"
+    },
+    {
+      "tag": "category_selection",
+      "patterns": [
+        "Tell me about mobiles",
+        "I'm interested in laptops",
+        "Mobiles",
+        "Laptops",
+        "mobile",
+        "laptop",
+        "tablet",
+        "Tablets",
+        "Tablet",
+        "tablets"
+      ],
+      "responses": [
+        "Cool! Can you please tell me the product name you're interested in?"
+      ],
+      "context_filter": "category_selection",
+      "context_set": "product_name"
+    },
+    {
+      "tag": "product_name",
+      "patterns": [],
+      "responses": [],
+      "context_filter": "product_name",
+      "context_reset": true
+    },
+    {
+      "tag": "goodbye",
+      "patterns": ["Bye", "See you later", "Goodbye", "seeya","fir milenge","nikal lode"],
+      "responses": [
+        "See you later! If you have more questions, feel free to ask.",
+        "Have a nice day! Goodbye!",
+        "Fir milenge!"
+      ]
+    },
+    {
+      "tag": "thanks",
+      "patterns": [
+        "Thanks",
+        "Thank you",
+        "That's helpful",
+        "Thanks for the help",
+        "thanks man",
+        "thanks buddy",
+        "Thanks for ur information"
+      ],
+      "responses": [
+        "You're welcome! If you need anything else, feel free to ask.",
+        "Glad I could help!"
+      ]
+    },
+    {
+      "tag": "default",
+      "patterns": [],
+      "responses": [
+        "I'm sorry, I didn't understand that. Could you please rephrase or ask another question?"
+      ]
+    },
+    {
+      "tag": "faq",
+      "patterns": [
+        "how are you?",
+        "how u doing?",
+        "how r u?",
+        "how are u?",
+        "whats up nigga",
+        "kya bolta bro?",
+        "kesa hai?"
+      ],
+      "responses": [
+        "I'm fine, what about you?",
+        "Im doing good bruh!",
+        "Im doing Great"
+      ]
+    },
+    {
+      "tag": "persnol",
+      "patterns": [
+        "who are you?",
+        "who the hell are you?",
+        "who the fuck are you?",
+        "who r u?",
+        "who are u?"
+      ],
+      "responses": [
+        "Ummm...who are you to ask? ask ur quires and go don't waste my time."
+      ]
+    },
+    {
+      "tag": "name",
+      "patterns": [
+        "what is your name?",
+        "what's your name?",
+        "what's ur name?",
+        "you're name?",
+        "ur name?"
+      ],
+      "responses": [
+        "MY name is OPtimus Prime and im servant of lord Jayendra my humble Creator."
+      ]
+    }
+    
+  ]
+}
