@@ -2,7 +2,7 @@ import os
 from dotenv import load_dotenv
 from flask import Flask, request, jsonify
 import requests
-
+from pathlib import Path
 
 
 app = Flask(__name__)
@@ -18,7 +18,8 @@ def index():
 @app.route('/get_price/<product_name>', methods=['POST'])
 def get_price(product_name):
     with app.app_context():
-        load_dotenv()
+        #dotenv_path = Path(r'C:\Users\jayen\chatbot_electronicsprices\.env')
+        #load_dotenv(dotenv_path=dotenv_path)
         PRICEYUGE_API_KEY = os.getenv("API_KEY")
         SEARCH_API_URL = "https://price-api.datayuge.com/api/v1/compare/search"
         DETAIL_API_URL = "https://price-api.datayuge.com/api/v1/compare/detail"
@@ -93,7 +94,7 @@ def get_price(product_name):
                 response_text += f"-Product Images: {', '.join(product_images)} \n"
                 #print(response_text)
                 return jsonify({'fulfillmentText': response_text})
-
+            
 
             else:
                 

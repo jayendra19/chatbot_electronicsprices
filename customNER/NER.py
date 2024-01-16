@@ -1,5 +1,4 @@
 from spacy.tokens import DocBin
-from tqdm import tqdm
 import spacy
 from spacy.util import minibatch, compounding
 from spacy.training import Example

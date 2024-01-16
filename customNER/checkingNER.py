@@ -11,7 +11,7 @@ def extract_entities(text):
     return entities
 
 # Example usage
-user_input = "asus rog "
+user_input = "samsung s22 ultra"
 entities = extract_entities(user_input)
 print(entities[0][0])
 

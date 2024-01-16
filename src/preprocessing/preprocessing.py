@@ -1,6 +1,5 @@
 import json 
 import os
-import nltk
 import logging
 import numpy as np 
 from keras.models import Sequential
@@ -9,8 +8,6 @@ from keras.preprocessing.text import Tokenizer
 from keras.preprocessing.sequence import pad_sequences
 from sklearn.preprocessing import LabelEncoder
 import pickle
-from nltk.stem import WordNetLemmatizer
-from nltk.corpus import stopwords
 from keras.layers import LSTM
 
 

@@ -1,7 +1,11 @@
 Flask
-python-dotenv
 requests
 tensorflow
 scikit-learn 
-pickle
 nltk
+streamlit
+spacy
+python-dotenv==0.19.0
+colorama
+tqdm
+

@@ -1,12 +1,7 @@
-import spacy
-import random
 import keras
 import pickle
 import numpy as np
-from colorama import Fore, Style
 import json 
-from flask import Flask, request, jsonify
-import numpy as np
 from tensorflow import keras
 import colorama 
 colorama.init()
@@ -20,7 +15,7 @@ with open("json/json_file.json") as file:
 
 
 
-def chat(user_input):
+def chat():
     # load trained model
     model = keras.models.load_model('artifacts/chat_model')
 

@@ -229,7 +229,7 @@
     {"text": "POCO M6 Pro 5G mobiles", "annotations": [{"start": 0, "end": 22, "label": "PRODUCT"}]},
     {"text": "i phone X", "annotations": [{"start": 0, "end": 9, "label": "PRODUCT"}]},
     {"text": "cost of i phone X", "annotations": [{"start": 8, "end": 17, "label": "PRODUCT"}]},
-    {"text": "i phone X", "annotations": [{"start": 8, "end": 9, "label": "PRODUCT"}]},
+    {"text": "iphone X", "annotations": [{"start": 0, "end": 8, "label": "PRODUCT"}]},
     {"text": "tCL Book X 10 Go price", "annotations": [{"start": 0, "end": 15, "label": "PRODUCT"}]},
     {"text": "Apple 2022 MacBook Air Laptop M2 chip cost", "annotations": [{"start": 0, "end": 37, "label": "PRODUCT"}]},
     {"text": "SAMSUNG Galaxy S23 FE 5G", "annotations": [{"start": 0, "end": 24, "label": "PRODUCT"}]},
@@ -250,6 +250,8 @@
     {"text": "price Acer One 14 Z2-493", "annotations": [{"start": 6, "end": 25, "label": "PRODUCT"}]},
     {"text": "Acer Predator Helios Neo 16", "annotations": [{"start": 0, "end": 27, "label": "PRODUCT"}]},
     {"text": "price Acer Predator Helios Neo 16", "annotations": [{"start": 6, "end": 34, "label": "PRODUCT"}]},
-    {"text": "Acer Predator Helios Neo 16 cost", "annotations": [{"start": 0, "end": 27, "label": "PRODUCT"}]}
+    {"text": "Acer Predator Helios Neo 16 cost", "annotations": [{"start": 0, "end": 27, "label": "PRODUCT"}]},
+    {"text": "samsung s22 ultra", "annotations": [{"start": 0, "end": 17, "label": "PRODUCT"}]},
+    {"text": "samsung s23 ultra", "annotations": [{"start": 0, "end": 17, "label": "PRODUCT"}]}
   ]
   
