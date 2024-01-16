@@ -64,8 +64,14 @@ jobs:
           # Ensure Buildx builder is active
           docker buildx create --use
 
+          # Display information about the builder (for troubleshooting)
+          docker buildx inspect default
+
           # Build the Docker container with Buildx
           docker buildx build --platform linux/amd64,linux/arm64 -t $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG .
+
+          # Display information about the built image (for troubleshooting)
+          docker inspect $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG
 
           # Push the Docker image to ECR
           docker push $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG
