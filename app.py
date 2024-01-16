@@ -6,7 +6,6 @@ import numpy as np
 from src.chatbotmaking.api_calling import get_price
 import spacy
 
-
 # load trained mod
 model = keras.models.load_model('artifacts/chat_model')
 
@@ -24,7 +23,8 @@ with open("json/json_file.json") as file:
 max_len = 20  # Set the maximum length as needed
 
 # Load your custom spaCy NER model
-custom_ner_model_path = r'C:\Users\jayen\chatbot_electronicsprices\NER'
+#custom_ner_model_path = r'C:\Users\jayen\chatbot_electronicsprices\NER'
+custom_ner_model_path = '/app/NER'
 custom_nlp = spacy.load(custom_ner_model_path)
 
 # Function to extract entities using your custom spaCy NER model
@@ -32,6 +32,8 @@ def extract_entities(text):
     doc = custom_nlp(text)
     entities = [(ent.text, ent.label_) for ent in doc.ents]
     return entities
+
+    
 
 st.title("Chatbot Streamlit App")
 
