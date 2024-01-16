@@ -13,6 +13,7 @@ model = keras.models.load_model('artifacts/chat_model')
 with open('artifacts/tokenizer.pickle', 'rb') as handle:
     tokenizer = pickle.load(handle)
 
+
 # load label encoder object
 with open('artifacts/label_encoder.pickle', 'rb') as enc:
     lbl_encoder = pickle.load(enc)
